@@ -238,8 +238,8 @@ a {
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.78),
-            rgba(0, 0, 0, 0.88)
+            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.94)
         ),
         url("../assets/img/bg-noticias.jpg");
 
@@ -888,4 +888,40 @@ a {
 .news-modal-close:hover {
     background-color: #64a19d;
     border-color: #64a19d;
+}
+
+/* =========================
+   FAQ - ACORDEÓN OSCURO
+   ========================= */
+
+#faqAccordion .accordion-item {
+    background-color: #111111;
+    border: 1px solid #333333;
+    color: #ffffff;
+}
+
+#faqAccordion .accordion-button {
+    background-color: #111111;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#faqAccordion .accordion-body {
+    background-color: #151515;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#faqAccordion .accordion-button::after {
+    filter: invert(1);
 }
